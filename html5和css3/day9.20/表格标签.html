@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格标签</title>
+</head>
+<body>
+    <!--表格的基本语法
+    <table>
+        <tr>
+            <td>单元格内的文字</td>
+        </tr>
+    </table>-->
+    <!-- <tr></tr>标签用于定义表格中的行，必须嵌套在<table></table>标签中 -->
+    <!-- 表头单元格<th></th> 有加粗居中效果-->
+    
+    <!-- 表格相关属性，这些属性要写到表格标签table里面去 -->
+    <!-- 属性名align  属性值left、center、right  默认left 左对齐规定表格相对于周围元素的对齐方式
+          border  1或""  规定表格单元是否拥有边框，默认为"",表示没有
+          cellpadding 像素值 规定单元格边沿与其内容之间的空白，默认1像素
+          cellspacing 像素值 规定单元格之间的空白，默认2像素
+          width  像素值或百分比 规定表格的宽度 -->
+    <table align="center" border="1" cellpadding="0" cellspacing="0" width="500" height="400">
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+        </tr>
+        <tr>
+            <td>刘德华</td>
+            <td>男</td>
+            <td>56</td>
+        </tr>
+        <tr>
+            <td>张学友</td>
+            <td>男</td>
+            <td>58</td>
+        </tr>
+    </table>
+    <!-- <thead></thead>表格的头部区域 <thead>内部必须有<tr>标签，一般在第一行
+    <tbody></tbody>表格的主体区域 -->
+</body>
+</html>
