@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSz字体属性之字体系列</title>
+    <!-- Font字体属性用于定义字体系列、大小、粗细、和文字样式（如斜体）
+    font-family用于定义字体系列
+    font-size用于定义字体大小 
+    font-weight 用于字体加粗 bold=700 normal=400 实际开发中，我们更提倡用数字表示加粗或者变细
+    font-style 设置文本的风格
+
+    -->
+   <style>
+        /* h2{
+            font-family: '微软雅黑';
+        }
+        p{
+            font-family: 'Microsoft YaHei';
+        } */
+        /* body{
+            font-size: 30px;
+        }
+         标题标签比较特殊，需要单独指定文字大小 
+        h2{
+            font-size: 30px;
+        } */
+        /* h2{
+            font-weight: normal;
+        } */
+        /* p{
+             font-style: italic;倾斜 
+        } */
+        /* em{
+            font-style: normal;
+        } */
+        div{
+            /* 复合属性：简写的方式 节约代码 */
+            /*严格按照顺序 font: font-style font-weight font-size/line-height font-family; 
+            必须保留font-size和font-family属性 否则font属性不起作用
+            */
+            font: italic  bold 16px  'Microsoft YaHei';
+        }
+</style>
+</head>
+<body>
+    <h2>pink的秘密</h2>
+    <p>红红火火恍恍惚惚</p>
+    <p>声卡的后部女子是司法的名字</p>
+    <p class="bold">现代剧i底薪保底vi大部分的</p>
+    <p>和附件是劳动纠纷</p>
+    <p>这是pink老师的秘密也是老师最终的嘱托</p>
+    <em>下课时候的你</em>
+    <div>三十三世十里桃花，一心一意百行代码</div>
+</body>
+</html>

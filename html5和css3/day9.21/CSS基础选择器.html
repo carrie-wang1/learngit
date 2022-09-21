@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css选择器</title>
+    <style>
+        /*标签选择器 ：写上标签名
+          p{
+            color: green;
+        }
+        div{
+            color: pink;
+        } */
+        /* 类选择器口诀：样式点定义  结构类(class)调用 一个或多个 开发最常用*/
+        /* 类选择器 多类名 多个类名之间必须用空格隔开 */
+        /* .red{
+            color: red;
+        }
+        .font35{
+            font-size: 35px;
+        } */
+        /* id选择器的口诀 样式#定义，结构id调用，只能调用一次，别人切勿使用 */
+        /* #pink{
+            color: pink;
+        } */
+        /* 通配符选择器 * */
+        /* *{
+            color: red;
+        } */
+    </style>
+</head>
+<body>
+    <!-- 选择器分为基础选择器和复合选择器两个大类
+    基础选择器是由单个选择器组成的，包括标签选择器、类选择器、id选择器和通配符选择器 -->
+    
+      <p>男生</p>
+      <p>男生</p>
+      <p>男生</p>
+      <div>女生</div>
+      <div>女生</div>
+      <div>女生</div>  
+      <ul>
+        <li class="red">冰雨</li>
+        <li class="red">来生缘</li>
+        <li id="pink">李香兰</li>
+        <li>生僻字</li>
+        <li>江南style</li>
+      </ul>
+      <div class="red font35">我也想变成红色</div>
+</body>
+</html>
