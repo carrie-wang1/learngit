@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三大特性</title>
+    <!-- CSS三个特性：层叠性、继承性、优先级 -->
+        <!-- 层叠性原则:样式冲突，就近原则，哪个样式离结构近，就执行哪个样式
+        样式不冲突，不会层叠 -->
+        
+        <!-- 继承性
+        子标签会继承父标签的某些样式，如文本颜色和字号。 
+        行高的继承
+    
+        -->
+        
+        <!-- 优先级
+        选择器相同，则执行层叠性
+        选择器权重：！important>行内样式style="">id选择器>类选择器，伪类选择器>元素选择器>继承或者* 
+        继承的权重是0
+        -->
+      
+        <!--  复合选择器 权重叠加
+        权重虽然会叠加，但是永远不会有进位
+        -->
+
+<style>
+    /* div{
+        color: pink;
+    }
+    div{
+        color: red;
+    } */
+    /* div{
+        color: pink;
+        font-size: 14px;
+    } */
+    /* body{
+        color: pink;
+        font: 12px/1.5 'Microsoft YaHei';
+    }
+    div{
+        font-size: 14px;
+    }
+    p{
+        font-size: 16px;
+    } */
+    div{
+        color: pink!important;
+    }
+    .test{
+        color: red;
+    }
+    #demo{
+        color: green;
+    }
+</style>
+</head>
+<body>
+    <!-- <div>你好呀好朋友</div> -->
+    <!-- <div>
+        <p>龙生龙，凤生凤，老鼠的儿子会打洞</p>
+    </div> -->
+    <!-- <div>粉红色的回忆</div>
+    <p>粉红色的回忆</p>
+    <ul>
+        <li>我没有指定文字大小</li>
+    </ul> -->
+    <div class="test" id="demo" style="color:purple ;">你笑起来真好看</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的背景</title>
+    <!-- 背景属性可以设置背景颜色、背景图片、背景平铺、背景图片位置、背景图像固定 -->
+    
+    <!--背景颜色 
+        background-color transparent/color 一般情况下元素背景颜色默认值是transparent -->
+
+    <!-- 背景图片
+        background-image :none 或者 url（地址） -->
+
+
+        <!-- 背景平铺
+        background-repeat: repeat | no-repeat | repeat-x |repeat-y 
+        默认情况下，背景是平铺的
+        页面元素既可以添加背景颜色也可以添加背景图片  只不过背景图片会压住背景颜色
+    -->
+
+<!-- 
+       背景图片的位置
+       background-position属性可以改变图片在背景中的位置
+       background-position:x y;
+       x 坐标  y坐标  可以使用方位名词或者精确单位
+       
+       方位名词
+       right center 和 center right 效果是等价的 跟顺序无关
+        如果指定了一个方位名词，另一个值省略，则第二个值默认居中对齐 
+    
+        精确单位
+        第一个肯定是x坐标  第二个肯定是y坐标
+        如果只指定一个数值，那该数值一定是x坐标，另一个默认垂直居中
+    -->
+   
+
+
+    <!-- 背景图像固定（背景附着）
+    background-attachment 属性设置背景图像是否固定或者随着页面的其余部分滚动
+    后期可以制作视差滚动的效果 
+    
+    background-attachment:scroll | fixed
+
+
+    -->
+
+    <!-- 背景符合写法
+    合并简写在同一个属性background中，没有特定的顺序
+
+    background:背景颜色 背景图片地址 背景图像滚动 背景图片位置 
+
+   -->
+
+   <!-- 背景色半透明
+   background: rgba(0,0,0,0.3)
+   a 是透明度 值在0-1之间 -->
+   <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-image: url(../img/logo.png);
+            background-color: pink;
+            background-repeat: no-repeat;
+            /* background-position: 20px 50px; */
+            background-position: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示模式</title>
+    <!-- HTML元素一般分为块元素和行内元素两种类型
+    
+        常见的块元素有h1-h6，<p></p>,<div></div>,<ul></ul>,<ol></ol>,<li></li>,其中div标签是最典型的块元素
+    块级元素的特点:独占一行;
+     高度 宽度 外边距以及内边距都可以控制
+     宽度默认是容器的100%
+     是一个容器及盒子，里面可以放行内或者块级元素 
+    文字类的元素内不能使用块级元素
+    <p>标签主要用于存放文字，因此<p>里不能放块级元素，特别是不能放<div>
+    <h1>-<h6>也不能放   
+        
+        常见的行内元素有<a>,<strong>,<b>,<em>,<i>,<del>,<s>,<ins>,<u>,<span>等，其中<span>标签是最典型的行内元素，有的地方也将行内元素称为内联元素
+    行内元素的特点:一行可以显示多个;
+     高度和宽度直接设置是无效的
+     默认宽度就是它本身内容的宽度
+     行内元素只能容纳文本或其他行内元素
+      链接里不能放链接
+            特殊情况链接<a>里面可以放块级元素，但是给<a>转换一下块级模式最安全
+        
+        行内块元素  同时具有块元素和行内元素的特点
+          <img/> <input/> <td/>
+        一行可以显示多个
+        默认宽度就是它本身内容的宽度
+        高度，行高，外边距以及内边距都可以控制
+
+    -->
+<style>
+    /* div{
+        
+        height: 200px;
+        background-color: pink;
+    } */
+    /* span{
+        width: 100px;
+        height: 100px;
+        background-color: hotpink;
+    } */
+    input{
+        width: 249px;
+        height: 20px;
+    }
+</style>
+</head>
+<body>
+    <!-- <div>块级元素比较霸道，独占一行</div>瑟瑟发抖 -->
+    <!-- <span>pink老师</span> <strong>品如的衣服</strong>
+    <span>pink老师</span> <strong>品如的衣服</strong> -->
+    <input type="text">
+    <input type="text">
+
+</body>
+</html>
