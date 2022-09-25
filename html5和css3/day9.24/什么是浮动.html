@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>什么是浮动</title>
+    <!-- 
+        float属性用于创建浮动框，将其移动到一边，直到左边缘或右边缘触及到包含块或另一个浮动框的边缘
+        1.浮动元素会脱离标准流（脱标）
+            浮动的元素不再保留原来的位置
+            如果多个盒子都设置了浮动，则它们会按照属性值一行内显示并且顶端对齐排列
+        
+        2.浮动的元素会一行内显示并且元素顶部对齐
+        
+        3.浮动的元素会具有行内块元素的特性
+        任何元素都可以浮动。不管原先是什么模式的元素，添加浮动之后具有行内块元素相似的特性
+        行内元素有了浮动，就不需要转换为块级元素\行内块元素就可以直接给高度和宽度
+
+        如果块级盒子没有设置宽度，默认宽度和父级一样高，但是添加浮动后，它的大小根据内容来决定
+        浮动盒子中间是没有缝隙的 是紧挨着一起的
+
+     -->
+    <style>
+    /* .left,
+    .right{
+        width: 200px;
+        height: 200px;
+        background-color: pink;    
+    }
+    .left{
+        float: left;
+    }
+    .right{
+        float: right;
+    } */
+    /* .box1{
+        width: 200px;
+        height: 200px;
+        background-color:pink;
+        float: left;
+    }
+    .box2{
+        height: 300px;
+        width: 300px;
+        background-color:rgb(0,153,255);
+    } */
+    /* div{
+        float: left;
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+    }
+    .two{
+        background-color: purple;
+        height: 249px;
+    }
+    .four{
+        background-color: skyblue;
+    } */
+    span,
+    div{
+        float: left;
+        width: 200px;
+        height: 100px;
+        background-color: pink;
+    }
+    p{
+        float: right;
+        height: 200px;
+        background-color: purple;
+    }
+    </style>
+</head>
+<body>
+    <!-- <div class="left">左青龙</div>
+    <div class="right">右白虎</div> -->
+    <!-- <div class="box1">浮动的盒子</div>
+    <div class="box2">标准流的盒子</div> -->
+    <!-- <div>1</div>
+    <div class="two">2</div>
+    <div>3</div>
+    <div class="four">4</div> -->
+    <span>1</span>
+    <span>2</span>
+    <div>div</div>
+    <p>
+        ppppppp
+
+    </p>
+</body>
+</html>
