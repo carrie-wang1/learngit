@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS盒子模型border-box</title>
+    <!-- css盒子模型  
+        可以通过box-sizing来指定盒模型 ，有2个值 即可指定为 content-box 、border-box
+
+        box-sizing：content-box盒子大小为width+padding+border
+
+        border-box盒子大小为width
+    
+    
+    -->
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 20px solid red;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        小猪乔治
+    </div>
+</body>
+</html>

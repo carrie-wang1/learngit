@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡属性</title>
+    <!-- transition过渡
+        过渡动画  从一个状态渐渐地过渡到另一个状态
+        
+        transition：要过渡的属性 花费时间(必须写单位s) 运动曲线（默认是ease）何时开始（默认是0s）
+
+        transition 谁做过渡给谁加
+    --> 
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transition: width  2s, height 2s;
+        }
+        div:hover{
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

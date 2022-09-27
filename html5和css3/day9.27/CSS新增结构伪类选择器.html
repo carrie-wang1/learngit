@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新增结构伪类选择器</title>
+    <!-- 结构伪类选择器主要根据文档结构来选择元素，常用于根据父级选择器里面的子元素
+    
+    E：first-child 匹配父元素的第一个子元素E
+    E: last-child 匹配父元素中的最后一个E元素
+    E：nth-child(n) 匹配父元素中的第n个子元素E
+    
+    -->
+    <style>
+        ul li:nth-child(2){
+            color: aqua;
+        }
+    </style>
+    
+</head>
+<body>
+    <ul>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+    </ul>
+</body>
+</html>

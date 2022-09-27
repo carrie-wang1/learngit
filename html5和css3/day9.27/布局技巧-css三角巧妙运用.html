@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS三角巧妙运用</title>
+    <!-- 想要的到长一点的直角三角形 
+        首先把一个盒子的高和宽设为0
+        给四个边框设成一个统一值
+        再取消下边框
+        把上边框的宽度设大一点
+        再把右边框取消
+        最后把上边框的颜色设置为transparent透明色，即可得到
+    
+    
+    -->
+    <style>
+        .box1{
+            width: 0;
+            height: 0;
+            border-top: 100px solid transparent;
+            border-left: 0 solid skyblue;
+            border-bottom: 0 solid #bfc;
+            border-right:60px solid rgb(167, 41, 41);
+            /* position: relative;
+            top: 100px;
+            left: 240px; */
+        }
+        .price{
+            width: 160px;
+            height: 24px;
+            border: 1px solid red;
+            margin: 0 auto;
+            line-height: 24px;
+        }
+        .miaosha{
+            position: relative;
+            float: left;
+            width: 90px;
+            height: 100%;
+            background-color: red;
+            text-align: center;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .miaosha i{
+            position: absolute;
+            width: 0;
+            height: 0;
+            right: 0;
+            top: 0;
+            border-color:transparent #fff transparent transparent ;
+            border-style: solid;
+            border-width: 24px 12px 0 0;
+        }
+        .origin{
+            font-size:12px ;
+            color: gray;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="price">
+        <span class="miaosha">￥1650
+            <i></i>
+        </span>
+        <span class="origin">￥5660</span>
+    </div>
+</body>
+</html>

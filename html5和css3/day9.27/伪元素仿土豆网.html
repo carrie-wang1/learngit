@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>土豆</title>
+    <style>
+        div{
+            position: relative;
+            width: 444px;
+            height: 320px;
+            margin: 30px auto;
+        }
+        div img{
+            width: 100%;
+            height: 100%;
+        }
+        div:hover::before{
+            content: '';
+            position:absolute;
+            width: 444px;
+            height: 320px;
+            background: rgba(0,0,0,.3) url(../img/arr.png) no-repeat center;
+          
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../img/tudou.jpg" alt="">
+    </div>
+</body>
+</html>
