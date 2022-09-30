@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D转换</title>
+    <!-- 三维坐标系
+    x轴：水平向右  x右边是正值 左边是负值
+    y轴：垂直向下  y下面是正值 上面是负值
+    z轴：垂直屏幕  往外面是正值，往里面是负值
+    
+    -->
+    <!-- 
+        3D位移:translate3d(x,y,z)
+    transform:translateX(100px) 仅仅在x轴上移动
+    transform:translateY(100px) 仅仅在y轴上移动
+    transform:translateZ(100px) 仅仅在z轴上移动(translateZ一般用px单位)
+    transform:translate3d(x,y,z) 其中x,y,z分别指要移动的轴的方向的距离 x,y,z不能省略 如果没有就写0
+        
+        3D旋转:rotate3d(x,y,z)
+        透视:perspective
+        3D呈现transfrom-style
+     -->
+     <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* transform: translateX(100px) translateY(100px) translateZ(100px); */
+            transform: translate3d(100px,100px,100px);
+        }
+     </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

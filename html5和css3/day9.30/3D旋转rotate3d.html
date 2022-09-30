@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotate3d</title>
+    <!-- 
+        transform:rotateX(45deg)    左手准则
+        transform:rotateY(45deg)
+        transform:rotateZ(45deg)
+
+        transform:rotate3d(x,y,z,deg) 沿着自定义轴旋转deg为角度
+       
+     -->
+     <style>
+        body{
+            perspective: 300px;
+        }
+        img{
+            display: block;
+            margin: 100px auto;
+            transition: all 4s;
+        }
+        img:hover{
+            /* transform: rotateX(45deg); */
+            /* transform: rotateY(45deg); */
+            transform: rotate3d(1,1,0,45deg);
+        }
+     </style>
+
+</head>
+<body>
+    <img src="../media/pig.jpg" alt="">
+</body>
+</html>

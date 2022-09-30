@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <!-- 动画的基本使用
+        定义动画  
+        使用动画
+    
+    用keyframes定义动画 关键帧
+    @keyframes 动画名称{
+        0%{
+            width:100px;
+        }
+        100%{
+            width:200px;
+        }
+    }
+    动画序列：0%是动画的开始，100%是动画的完成
+     也可以使用from和to代替
+    百分比要是整数  里面的百分比就是时间的划分
+    -->
+    <style>
+        /* @keyframes move{
+            from{
+                transform: translate(0px);
+            }
+            to{
+                transform: translate(1000px);
+            }
+        } */
+        @keyframes move{
+            0%{
+                transform: translate(0,0);
+            }
+            25%{
+                transform: translate(1000px,0);
+            }
+            50%{
+                transform: translate(1000px,500px);
+            }
+            75%{
+                transform: translate(0,500px);
+            }
+            100%{
+                transform: translate(0,0);
+            }
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* 动画名称 */
+            animation-name:move;
+            /* 动画持续时间 */
+            animation-duration: 10s;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

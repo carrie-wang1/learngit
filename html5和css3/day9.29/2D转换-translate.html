@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate转换</title>
+    <!-- transform是CSS3中具有颠覆性的特征之一，可以实现元素的位移、旋转、缩放等效果
+    变形 translate移动
+         rotate 旋转
+         scale 缩放 -->
+
+    <style>
+        /* 移动盒子的位置的方法 ：定位    盒子的外边距    2D转换移动 */
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* x就是x轴上移动位置  y就是y轴上移动位置 中间用逗号隔开
+              transform：translate(x,y)
+              1.只移动x坐标
+              transform：translate(100px,0)
+              或transform: translateX(100px)
+              2.只移动y坐标
+              transform：translate(0,100px)
+              或transfform:translateY(100px)
+             
+              优点：不会影响到其他元素的位置;Translate的百分比单位是相对于自身元素的translate：（50%，50%）;
+              对行内标签没有效果
+            */
+            /* transform:translate(100px,100px); */
+
+            
+        }
+        div:first-child{
+            transform: translate(30px,30px);
+        }
+        div:last-child{
+                background-color: purple;
+            }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html>

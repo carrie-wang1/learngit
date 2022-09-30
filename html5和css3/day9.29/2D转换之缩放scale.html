@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>缩放scale</title>
+    <!-- 语法
+    transform:scale(x,y);
+    scale(1,1)宽高放大一倍，相当于没有放大
+    scale(2,2)宽高都放大2倍
+    scale(2) 只写了一个参数，第二个参数和第一个参数一样，相当于scale(2,2)
+    scale(0.5,0.5)缩小
+    scale缩放最大的优势:可以设置元素转换的中心点，
+    默认以中心点缩放，而且不影响其他盒子 
+    
+
+
+    -->
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+            transition: all 0.5s;
+            transform-origin: left bottom;
+        }
+        div:hover{
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    123
+</body>
+</html>

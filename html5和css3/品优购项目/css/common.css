@@ -137,9 +137,11 @@
     width: 210px;
     height: 45px;
     background-color: #b1191a;
+    
 }
 .nav .navitems{
     float: left;
+    
 }
 .dropdown .dt{
     width: 100%;
@@ -160,8 +162,8 @@
     position: relative;
     height: 31px;
     line-height: 31px;
-    margin-left: 2px;
-    padding-left: 10px;
+    /* margin-left: 2px; */
+    padding-left: 12px;
 }
 .dropdown .dd ul li:hover{
     background-color: #fff;
