@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 移动端浏览器基本以webkit内核为主，因此我们就考虑webkit兼容性问题 
+    移动端CSS初始化normalize.css
+    优点:保护了有价值的默认值；
+    修复了浏览器的bug；
+    是模块化的
+    拥有详细的文档
+
+    CSS3盒子模型box-sizing:border-box
+      盒子的宽度=width
+      这个width里包含了border和padding
+    
+    传统盒子模型box-sizing:content-box
+      宽度=width+padding+border  
+
+    -->
+    <style>
+        div:nth-child(1){
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            
+        }
+        div:last-child{
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            box-sizing: border-box;
+            border: 10px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html>

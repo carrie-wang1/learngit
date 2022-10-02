@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <!-- 
+        align-items设置侧轴上的子元素排列方式(单行)
+
+        flex-start:从上到下
+        flex-end:从下到上
+        center:挤在一起居中(垂直居中)
+        stretch:拉伸(默认值) 但是子盒子不要给高度
+
+
+     -->
+     <style>
+        div{
+            display: flex;
+            width: 800px;
+            height: 400px;
+            background-color: pink;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+        }
+        div span{
+            width: 150px;
+            /* height: 100px; */
+            background-color: purple;
+            color: #fff;
+            margin: 10px;
+        }
+     </style>
+</head>
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+</html>

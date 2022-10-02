@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二倍图</title>
+<!-- Retina 视网膜屏幕  可以将更多的物理像素点压缩至一块屏幕里
+    在标准的viewport设置中，使用倍图来提高图片质量，解决在高清设备中的模糊问题
+    我们准备的图片 比我们实际需要的大小 大2倍 这就是2倍图
+-->
+<style>
+    img:nth-child(2){
+        width: 50px;
+        height: 50px;
+        
+    }
+</style>
+</head>
+<body>
+    <!-- 模糊的 -->
+    <img src="../images/apple50(1).jpg" alt="">
+    <!-- 我们采取2倍图 -->
+    <img src="../images/apple100.jpg" alt="">
+</body>
+</html>

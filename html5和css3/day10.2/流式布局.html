@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>流式布局</title>
+<!-- 百分比布局 非固定像素布局
+    通过盒子的宽度设置成百分比来根据屏幕的宽度进行伸缩，不受固定像素的限制，内容向两侧填充
+    流式布局是移动端web开发使用的比较常见的布局方式
+
+
+-->
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    section{
+       
+        width: 100%;
+        
+    }
+    section div{
+        float: left;
+        width: 50%;
+        height: 400px;
+    }
+    section div:nth-child(1){
+        background-color: pink;
+    }
+    section div:nth-child(2){
+        background-color: purple;
+    }
+</style>
+</head>
+<body>
+  <section>
+    <div></div>
+    <div></div>
+  </section>  
+</body>
+</html>

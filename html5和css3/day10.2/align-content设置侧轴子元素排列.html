@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-content</title>
+    <!--
+        align-content 设置侧轴上的子元素的排列方式(多行)
+        设置子项在侧轴上的排列方式，并且只能用于子项出现换行的情况(多行),单行下是没有效果的
+    flex-start 默认值在侧轴的头部开始排列
+    flex-end  默认值在侧轴的尾部开始排列
+    center  在侧轴中间显示
+    space-around 子项在侧轴平分剩余空间
+    space-between  子项在侧轴先分布在两头，再平分剩余空间
+    stretch  设置子项元素高度平分父元素高度
+ 
+ 
+    -->
+    <style>
+        div{
+            display: flex;
+            width: 800px;
+            height: 400px;
+            background-color: pink;
+            flex-wrap: wrap;
+            align-content: stretch;
+        }
+        div span{
+            width: 150px;
+            height: 100px;
+            background-color: purple;
+            color: #fff;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+    </div>
+</body>
+</html>

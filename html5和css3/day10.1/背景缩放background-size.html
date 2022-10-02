@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景缩放</title>
+    <!-- background-size 属性规定背景图像尺寸
+    background-size：背景图片宽度  背景图片高度;
+    1.只写一个参数  肯定是宽度 高度省略了 会等比例缩放
+
+    2.里面的单位可以跟50% 相对于父盒子来说的
+    
+    3.cover要完全覆盖div盒子 可能有部分背景图片显示不全
+
+    4.contain把图像扩展至最大尺寸，高度和宽度等比例拉伸，铺满div盒子就不再进行拉伸了
+    以使其宽度和高度完全适应内容区域
+
+    -->
+    <style>
+        div{
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+            background: url(../images/dog.jpg) no-repeat;
+            background-size: 50px 50px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
