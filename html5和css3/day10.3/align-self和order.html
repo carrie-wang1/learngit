@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-self和order</title>
+    <!-- 
+        align-self控制子项自己在侧轴上的排列方式
+        align-self 属性允许单个项目有于其他项目不一样的对齐方式，可覆盖align-items属性
+        默认值为auto,表示继承父元素的align-items属性,如果没有父元素，则等同于stretch
+
+        order属性定义项目的排列顺序
+        数值越小，排列越靠前，默认为0
+     -->
+     <style>
+        div{
+            display: flex;
+            width: 80%;
+            height:300px;
+            background-color: pink;
+            
+        }
+        div span{
+            width: 150px;
+            height: 100px;
+            background-color: purple;
+            margin-right: 5px;
+        }
+        div span:nth-child(3){
+            align-self: flex-end;
+            order: -1;
+        }
+     </style>
+</head>
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+</html>
