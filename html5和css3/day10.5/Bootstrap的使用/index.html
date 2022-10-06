@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 要求当前网页使用IE浏览器的最高版本内核来渲染 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.cn/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.cn/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        /* .login{
+            width: 80px;
+            height: 45px;
+        } */
+        /* [class^="col"]{
+            border: 1px solid #ccc;
+        }
+        .container .row:nth-child(1){
+            background-color: pink;
+        } */
+        /* .row>div{
+            height: 50px;
+            background-color: pink;
+        } */
+        .row div{
+            height: 50px;
+            background-color: purple;  
+        }
+        .row div:nth-child(3){
+            background-color: pink;
+        }
+        span{
+            font-size: 50px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button type="button" class="btn btn-success">（成功）Success</button>
+    <div class="btn btn-success login">登录</div>
+    <div class="btn btn-danger">未成功</div> -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">1</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">2</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">3</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">4</div>
+        </div> -->
+        <!-- 如果孩子的份数相加等于12 则孩子能占满整个 的container 的宽度 -->
+        <!-- <div class="row">
+            <div class="col-lg-6">1</div>
+            <div class="col-lg-2">2</div>
+            <div class="col-lg-2">3</div>
+            <div class="col-lg-2">4</div>
+        </div> -->
+        <!-- 如果孩子的份数相加 小于12 则会占不满·整个container 的宽度 会有空白
+         -->
+        <!-- <div class="row">
+            <div class="col-lg-6">1</div>
+            <div class="col-lg-2">2</div>
+            <div class="col-lg-2">3</div>
+            <div class="col-lg-1">4</div>
+        </div> -->
+        <!-- 如果孩子的份数相加大于12  则会 另起一行显示-->
+        <!-- <div class="row">
+            <div class="col-lg-6">1</div>
+            <div class="col-lg-2">2</div>
+            <div class="col-lg-2">3</div>
+            <div class="col-lg-3">4</div>
+        </div> -->
+    <!-- </div> -->
+    <!-- <div class="container"> -->
+        <!-- <div class="row">
+            <div class="col-md-4">
+               <div class="row">
+                <div class="col-md-4">a</div>
+                <div class="col-md-8">b</div>
+               </div>
+            </div>
+            <div class="col-md-4">2</div>
+            <div class="col-md-4">3</div>
+        </div>
+    </div> -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-3">左侧</div>
+             偏移的份数 就是12-两个盒子的份数=6 -->
+            <!-- <div class="col-md-3 col-md-offset-6">右侧</div>
+        </div>
+        <div class="row"> -->
+            <!-- 如果只有一个盒子  那么就偏移 = (12 - 8)/2 
+            <div class="col-md-8 col-md-offset-2">中间盒子</div>
+            
+        </div>
+    </div> --> 
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-push-8">左侧</div>
+            <div class="col-md-8 col-md-pull-4">右侧</div>
+        </div>
+    </div> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <span class="visible-lg">我会显示哦</span>
+            </div>
+            <div class="col-xs-3">2</div>
+            <div class="col-xs-3 hidden-md">我会变魔术哦</div>
+            <div class="col-xs-3">4</div>
+        </div>
+    </div>
+ </body>
+</html>
