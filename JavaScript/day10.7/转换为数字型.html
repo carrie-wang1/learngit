@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- parseInt(string)函数  将string类型转成整数数值型
+         parseFloat(string)函数 将string类型转成浮点数数值型
+         Number()强制转换函数  将string类型转换为数值型
+         js隐式转换(- * /)
+    
+    -->
+    <script>
+        // var age = prompt('请输入你的年龄');
+        //1.parseInt(变量) 可以把 字符型的转换为数字型 得到的是整数
+        // console.log(parseInt(age));
+        console.log(parseInt('2.12'));//2取整 小数部分不要了
+        console.log(parseInt('120px'));//120会去掉这个px单位
+        //2.parseFloat(变量) 可以把 字符型的转换为数字型 得到的是小数 浮点数
+        console.log(parseFloat('2.12'));//2.12
+        //3.利用Number(变量)
+        var str = '123';
+        console.log(Number(str));
+        //4.利用了算术运算-隐式转换
+        console.log('12'- 0);//12
+        console.log('123'-'120');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
