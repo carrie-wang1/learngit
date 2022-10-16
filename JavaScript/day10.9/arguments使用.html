@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+    不确定有多少个参数传递的时候 可以用arguments来获取
+    在js中，arguments实际上是当前函数的一个内置对象
+    所有函数都内置了一个arguments对象，arguments对象中存储了传递的所有实参
+    
+-->
+    <script>
+        //arguments的使用
+        function fn(){
+            console.log(arguments);
+        }
+        fn(1,2,3);
+        //arguments展示形式是一个伪数组 伪数组具有以下特点
+        //具有length属性;按索引方式存储数据;不具有数组的push,pop等方法
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

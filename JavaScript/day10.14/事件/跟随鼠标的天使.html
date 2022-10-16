@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            position: absolute;
+            
+        }
+    </style>
+</head>
+<body>
+    <img src="./angel.gif" alt="">
+    <script>
+        var pic = document.querySelector('img');
+        document.addEventListener('mousemove',function(e){
+            var x = e.pageX;
+            var y = e.pageY;
+            //不要忘记给left和top添加单位
+            pic.style.top = y-40+'px';
+            pic.style.left=x-50+'px';
+        })
+    </script>
+
+</body>
+</html>

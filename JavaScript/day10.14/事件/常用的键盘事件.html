@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 键盘事件
+    onkeyup  某个键盘按键被松开时触发
+    onkeydown  某个键盘键被按下时触发
+    onkeypress 某个键盘按键被按下时  触发  但是它不识别功能键 比如ctrl  shift箭头等
+    -->
+</head>
+<body>
+    <script>
+        //1.onkeyup按键弹起时触发
+        /* document.onkeyup = function(){
+            console.log('我弹起了');
+        } */
+        /* document.addEventListener('keyup',function(){
+            console.log('我谈起了');
+        })*/
+
+        //2.keydown按键按下的时候触发
+        document.addEventListener('keydown',function(){
+            console.log('我按下了');
+        })
+
+        //3.keypress 按键按下的时候触发  不能识别功能键 比如 ctrl  shift 左右箭头啊
+        document.addEventListener('keypress',function(){
+            console.log('我按了press');
+        })
+        //三个事件的执行顺序  keydown -- keypress --keyup
+    </script>
+</body>
+</html>

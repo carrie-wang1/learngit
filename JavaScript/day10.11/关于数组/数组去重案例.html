@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       //原来的数组去重 再定义一个新的空数组
+       //算法:我们遍历旧数组,然后拿着旧数组元素去查询新数组，如果该元素不在里面则添加  
+       //如果该元素在 则不添加
+
+       //封装一个去重函数 unique 独一无二的
+       function unique(arr){
+        var newArr = [];
+        for(var i=0;i<arr.length;i++){
+            if(newArr.indexOf(arr[i])===-1){
+                newArr.push(arr[i]);
+            } 
+        }
+        return newArr;
+       }
+       var demo = unique(['a','x','c','a','y','z','x']);
+       console.log(demo);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

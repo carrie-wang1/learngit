@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //查找字符串'abcoefoxyozzopp'中所有的出现的位置以及次数
+        //先查找第一个o出现的位置
+        //如何  只要indexOf 返回的结果不是-1 就往后继续查找 
+        //因为indexOf 只能查找到第一个 所有后面的查找 一定是当前索引加1 从而继续查找
+        /* var str = "abcoefoxyozzopp";
+        var index = str.indexOf('o');
+        //console.log(index);
+        
+        while(index !==-1){
+            console.log(index);
+            index = str.indexOf('o',index+1);
+        } */
+
+        //课后作业['red','blue','red','green','pink','red']  求red出现的位置和次数
+        var arr = ['red','blue','red','green','pink','red'];
+        var index = arr.indexOf('red');
+        console.log(index); 
+        while(index!==-1){
+            console.log(index);
+            index = arr.indexOf('red',index+1)
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

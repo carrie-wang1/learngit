@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>continue关键字</title>
+    <!-- continue关键字用于立即跳出本次循环，继续下次循环(本次循环体中continue之后的代码就会少执行一次) -->
+    <script>
+        //continue 关键字 退出本次当前次的循环  继续执行剩余次数的循环
+        /* for(var i=1;i<=5;i++){
+            if(i==3){
+                continue;//只要遇见continue就会退出本次循环，直接跳到i++
+            }
+            console.log('我正在吃第'+i+'个包子');
+        } */
+
+        var sum = 0;
+        for(var i=1;i<=100;i++){
+            if(i%7==0){
+                continue;
+            }
+            sum=sum+i;
+        }
+        console.log(sum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

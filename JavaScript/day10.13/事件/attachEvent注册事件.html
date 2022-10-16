@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- attachEvent事件监听方式 
+    eventTarget.attachEvent(eventNameWithOn,callback)
+    
+    eventNameWithOn   事件类型字符串 比如onclick 这里要带on
+    callback  事件处理函数  当目标触发事件回调函数被调用
+
+-->
+</head>
+<body>
+    <button>传统注册事件</button>
+    <button>方法监听注册事件</button>
+    <button>IE9以前的版本支持</button>
+    <script>
+        var btns = document.querySelectorAll('button');
+        btns[2].attachEvent('onclick',function(){
+            alert('嘿嘿');
+        })
+    </script>
+</body>
+</html>

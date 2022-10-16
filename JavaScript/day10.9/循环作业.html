@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1.用for打印矩形
+        /* var str = '';
+        for(var i=1;i<=4;i++){
+            for(var j=1;j<=5;j++){
+                str = str +'⭐';
+            }
+            str = str + '\n';
+        }
+        console.log(str); */
+        //2.打印三角形利用for循环
+       /*  var str = '';
+        for(var i =1;i<=5;i++){
+            for(var j=5-i;j<5;j++){
+                str = str +'⭐';
+            }
+            str = str + '\n';
+        }
+        console.log(str); */
+        //3.打印99乘法表
+        /* var str = '';
+        for(var i =1;i<=9;i++){
+            for(var j=1;j<=i;j++){
+                str=str+j+'x'+i+'='+i*j+'\t';
+            }
+            str =str + '\n';
+        }
+        console.log(str); */
+        //4.接受用户输入的用户名和密码
+        /* do{
+        var name = prompt('请输入用户名:');
+        var password = prompt('请输入密码:');
+        }while(name != 'admin' || password != '123456' );
+        alert('登录成功'); */
+        //5.求整数1~100的累加值 但要跳过所有个位数为3的数
+        var sum = 0;
+        for(var i=0;i<=100;i++){
+            if(i % 10 == 3){
+                continue;
+            }
+            sum=sum+i;
+        }
+        console.log(sum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

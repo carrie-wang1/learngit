@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        获取页面中的元素可以使用以下几种方式:
+        根据ID获取   getElementById()方法可以获取带有ID的元素对象
+        根据标签名获取  
+        通过HTML5新增的方法获取
+        特殊元素获取
+      -->
+  
+</head>
+<body>
+    <div id="time">2019-9-9</div>
+    <script>
+      //1.因为我们文档页面从上往下加载  所以先得有标签 -> 我们script写到标签下面
+      //2.getElementById  驼峰命名法
+      //3.参数id是大小写敏感的字符串
+      //4.返回的是一个元素对象
+      var timer = document.getElementById('time');
+      console.log(timer);
+      console.log(typeof timer);
+      //5.console.dir  打印我们返回的元素对象  更好的查看里面的属性和方法
+      console.dir(timer);
+    </script>
+</body>
+</html>
