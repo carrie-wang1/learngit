@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- offset偏移量
+    获得元素距离带有定位父元素的位置
+    获得元素自身的大小(宽度和高度)
+    注意：返回的数值都不带单位
+    -->
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .father {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 150px;
+        }
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            margin-left: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <script>
+        var father = document.querySelector('.father');
+        var son = document.querySelector('.son');
+        //console.log(father.offsetTop);
+        //console.log(father.offsetLeft);
+        //它以带有定位的父亲为准 如果没有父亲或者父亲没有定位 则以body为准
+        console.log(son.offsetLeft);
+
+
+        
+    </script>
+</body>
+</html>

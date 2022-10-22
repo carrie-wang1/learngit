@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    offset                            style
+可以得到任意样式表中的样式值            只能得到行内样式表中的样式值
+获得的数值没有单位                      获得的是带有单位的字符串
+包含border+padding+width               获得的不包含padding和border的值
+是只读属性 只能获取不能赋值              是可读写属性 可以获取也可以赋值 
+获取元素的大小位置 offset更合适           更改值 需要用style改变
+
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" style="width: 200px;"></div>
+    <script>
+        // offset与style的区别
+        var box = document.querySelector('.box');
+        console.log(box.offsetWidth);
+        console.log(box.style.width);
+        // box.offsetWidth = '300px';
+        box.style.width = '300px';
+    </script>
+</body>
+
+</html>

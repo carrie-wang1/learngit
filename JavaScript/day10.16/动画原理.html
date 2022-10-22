@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        要加定位 
+        通过定时器setInterval 不断移动盒子的位置-->
+    <style>
+        div{
+            position: absolute;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        var div = document.querySelector('div');
+        var timer = setInterval(function(){
+            if(div.offsetLeft>=400){
+                clearInterval(timer);
+            }else{
+                div.style.left = div.offsetLeft+1+'px';
+            }
+            
+        },30)
+    </script>
+
+
+</body>
+</html>

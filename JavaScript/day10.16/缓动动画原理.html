@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 缓动动画就是让元素运动速度有所变化
+     最常见的就是让速度慢慢停下来
+     让盒子每次移动的距离慢慢变小，速度就会慢慢落下来
+     核心算法:(目标值-现在的位置)/10 作为每次移动的距离步长
+    停止的条件是: 让当前盒子的位置等于目标位置就停止定时器
+    -->
+    <style>
+        span {
+            position: absolute;
+            left: 0;
+            top: 200px;
+            display: block;
+            width: 150px;
+            height: 150px;
+            background-color: purple;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button class="btn500">点击夏雨荷到500</button>
+    <button class="btn800">点击夏雨荷到800</button>
+    <span>夏雨荷</span>
+    <script>
+        function animate(obj, target) {
+            clearInterval(obj.timer);
+            obj.timer = setInterval(function () {
+                //步长值写到定时器的里面
+                var step = (target - obj.offsetLeft) / 10;
+                step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                if (obj.offsetLeft == target) {
+                    clearInterval(obj.timer);
+                }
+                //把每次加1这个步长值 改为一个慢慢变小的值 ，步长公式 :(目标值-现在的位置)/10
+                obj.style.left = obj.offsetLeft + step + 'px';
+            }, 15);
+        }
+        var span = document.querySelector('span');
+        var btn500 = document.querySelector('.btn500');
+        var btn800 = document.querySelector('.btn800')
+        btn500.addEventListener('click', function () {
+            animate(span, 500);
+        })
+        btn800.addEventListener('click', function () {
+            animate(span, 800);
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+         动画函数添加回调函数
+    回调函数 ： 函数可以作为一个参数，将这个函数作为参数传到另一个函数里面 ，当那个函数执行完之后
+    再执行传进去的这个函数，这个过程就叫做回调
+    
+    
+    -->
+    <style>
+        span {
+            position: absolute;
+            left: 0;
+            top: 200px;
+            display: block;
+            width: 150px;
+            height: 150px;
+            background-color: purple;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button class="btn500">点击夏雨荷到500</button>
+    <button class="btn800">点击夏雨荷到800</button>
+    <span>夏雨荷</span>
+    <script>
+        function animate(obj, target,callback) {
+            console.log(callback);
+            clearInterval(obj.timer);
+
+            obj.timer = setInterval(function () {
+                //步长值写到定时器的里面
+                var step = (target - obj.offsetLeft) / 10;
+                step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                if (obj.offsetLeft == target) {
+                    clearInterval(obj.timer);
+                    if(callback){
+                        callback();
+                    }
+                }
+                //把每次加1这个步长值 改为一个慢慢变小的值 ，步长公式 :(目标值-现在的位置)/10
+                obj.style.left = obj.offsetLeft + step + 'px';
+            }, 15);
+        }
+        var span = document.querySelector('span');
+        var btn500 = document.querySelector('.btn500');
+        var btn800 = document.querySelector('.btn800')
+        btn500.addEventListener('click', function () {
+            animate(span, 500);
+        })
+        btn800.addEventListener('click', function () {
+            animate(span, 800,function(){
+                //alert('你好啊');
+                span.style.backgroundColor = 'red';
+            });
+        })
+    </script>
+
+</body>
+
+</html>
