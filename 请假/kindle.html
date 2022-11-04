@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kindle</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        header {
+            position: relative;
+            color: #fff;
+            width: 100%;
+            height: 80px;
+            background-color: #409efe;
+            text-align: center;
+            line-height: 80px;
+            font-size: 18px;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 30px;
+            left: 15px;
+            width: 15px;
+            height: 15px;
+            border-right: 3px solid #fff;
+            border-bottom: 3px solid #fff;
+            transform: rotate(-225deg);
+        }
+
+        .name {
+            padding: 8px 8px 5px 8px;
+            margin: 10px 10px 5px 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        .main {
+            position: relative;
+            background-color: #fff;
+            font-size: 15px;
+            padding: 8px 10px 99px 10px;
+        }
+
+        .main p {
+            color: rgb(52, 56, 59);
+        }
+        .main div{
+            margin: 0 0 8px 0;
+        }
+        .main .pass{
+            color: rgb(32, 151, 32);
+        }
+        .main .record{
+            position: absolute;
+            box-sizing: border-box;
+            top: 10px;
+            left: 270px;
+            background-color: #faf9ec;
+            font-size: 10px;
+            color:#b3e0a5;
+            padding: 7px;
+            border-radius: 5px;
+            border:1px solid #d5f8c8;
+        }
+    </style>
+</head>
+
+<body>
+    <header>外出详情</header>
+    <div class="name">
+        <p>王玲(199074427)</p>
+        <p>计算机科学与技术学院</p>
+    </div>
+    <div class="main">
+        <div class="blank">
+            <p>联系方式</p>
+            <span>188****7339</span>
+        </div>
+        <div class="record">
+            近14天打卡记录
+        </div>
+        <div class="blank">
+            <p>外出时间</p>
+            <span>2022-10-29 00:08:00</span>
+        </div>
+        <div class="blank">
+            <p>返校时间</p>
+            <span>2022-10-29 00:20:00</span>
+        </div>
+        <div class="blank">
+            <p>外出地址</p>
+            <span>安徽-马鞍山市-雨山区-奥体中心</span>
+        </div>
+
+        <div class="blank">
+            <p>外出原因</p>
+            <span>上课</span>
+        </div>
+        <div class="blank">
+            <p>申请时间</p>
+            <span>2022-10-28 19:45:35</span>
+        </div>
+        <div class="blank">
+            <p>审核辅导员</p>
+            <span>朱筱</span>
+        </div>
+        <div class="blank">
+            <p>辅导员审批时间</p>
+            <span>2022-10-28 19:51:31</span>
+        </div>
+        <div class="pass">
+            <p>审批状态</p>
+            <span>辅导员审核通过</span>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
